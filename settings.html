@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="slider shadow bg-white position-relative p-3">
+        <h3 class="position-relative text-center mt-0 fw-bold">Alirn</h3>
+        <ul>
+          <li>
+            <a
+              href="index.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span class="d-none d-md-block">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="settings.html"
+              class="active text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span class="d-none d-md-block">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="profile.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span class="d-none d-md-block">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="projects.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-solid fa-diagram-project fa-fw"></i>
+              <span class="d-none d-md-block">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="courses.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-solid fa-graduation-cap fa-fw"></i>
+              <span class="d-none d-md-block">Courses</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="friends.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-regular fa-circle-user fa-fw"></i>
+              <span class="d-none d-md-block">Friends</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="files.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span class="d-none d-md-block">Files</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="plans.html"
+              class="text-black d-flex align-items-center fs-6 p-2 rounded"
+            >
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span class="d-none d-md-block">Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content overflow-hidden w-100">
+        <!-- head -->
+        <div
+          class="head d-flex align-items-center justify-content-between bg-white p-3"
+        >
+          <div class="search position-relative">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Type A Keyword"
+            />
+          </div>
+
+          <div class="icons">
+            <span class="bell position-relative"
+              ><i class="fa-regular fa-bell fa-lg"></i
+            ></span>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!-- head -->
+
+        <h1 class="position-relative fw-bold">Settings</h1>
+
+        <div class="sttings-page">
+          <!-- <label>
+                    <input class="toggle-checkbox" type="checkbox" checked>
+                    <div class="toggle-switch"></div>
+                </label> -->
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-6 col-md-12 rounded p-0 mb-3">
+                <div
+                  style="height: 100%"
+                  class="site-cotrol bg-white p-3 rounded me-md-2 mx-2"
+                >
+                  <h3 class="fw-bold mt-0 mb-1">Site Control</h3>
+                  <p class="text-black-50 mt-0 mb-3">
+                    Control The Website If There Is Maintenance
+                  </p>
+                  <div
+                    class="mb-2 d-flex justify-content-between align-items-center"
+                  >
+                    <div class="">
+                      <span>Website Control</span>
+                      <p class="text-black-50">
+                        Open/Close Website And Type The Reason
+                      </p>
+                    </div>
+                    <div>
+                      <label>
+                        <input
+                          class="toggle-checkbox"
+                          type="checkbox"
+                          checked
+                        />
+                        <div class="toggle-switch"></div>
+                      </label>
+                    </div>
+                  </div>
+                  <textarea
+                    class="close-mess p-2 rounded w-100"
+                    placeholder="Close Message Content"
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-md-12 rounded p-0 mb-3">
+                <div
+                  style="height: 100%"
+                  class="general bg-white p-3 rounded me-md-2 mx-2"
+                >
+                  <h3 class="fw-bold mt-0 mb-1">General Info</h3>
+                  <p class="text-black-50 mt-0 mb-3">
+                    General Information About Your Account
+                  </p>
+                  <div class="mb-3">
+                    <label for="first" class="form-label fs-6 text-black-50"
+                      >First Name</label
+                    >
+                    <input
+                      id="first"
+                      type="text"
+                      class="form-control"
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="last" class="form-label fs-6 text-black-50"
+                      >Last Name</label
+                    >
+                    <input
+                      id="last"
+                      type="text"
+                      class="form-control"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label fs-6 text-black-50"
+                      >Email address</label
+                    >
+                    <input
+                      id="email"
+                      type="email"
+                      class="email form-control d-inline-flex"
+                      disabled
+                      placeholder="name@example.com"
+                    />
+                    <a class="fw-bold" href="#">Change</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-md-12 rounded p-0 mb-3">
+                <div
+                  style="height: 100%"
+                  class="security bg-white p-3 rounded me-md-2 mx-2"
+                >
+                  <h3 class="fw-bold mt-0 mb-1">Security Info</h3>
+                  <p class="text-black-50 mt-0 mb-3">
+                    Security Information About Your Account
+                  </p>
+
+                  <div
+                    class="pass-info d-flex align-items-center justify-content-between border-bottom"
+                  >
+                    <div>
+                      <p class="mb-1 mt-2">Password</p>
+                      <p style="font-size: 14px" class="text-black-50 mb-4">
+                        Last Change On 25/10/2021
+                      </p>
+                    </div>
+                    <button class="btn btn-primary">Change</button>
+                  </div>
+
+                  <div
+                    class="pass-info d-flex align-items-center justify-content-between border-bottom"
+                  >
+                    <div>
+                      <p class="mb-1 mt-3">Two-Factor Authentication</p>
+                      <p style="font-size: 14px" class="text-black-50 mb-4">
+                        Enable/Disable The Feature
+                      </p>
+                    </div>
+                    <label>
+                      <input class="toggle-checkbox" type="checkbox" checked />
+                      <div class="toggle-switch"></div>
+                    </label>
+                  </div>
+
+                  <div
+                    class="pass-info d-flex align-items-center justify-content-between"
+                  >
+                    <div>
+                      <p class="mb-1 mt-3">Devices</p>
+                      <p style="font-size: 14px" class="text-black-50 mb-4">
+                        Check The Login Devices List
+                      </p>
+                    </div>
+                    <h4><span class="badge">Devices</span></h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-md-12 rounded p-0 mb-3">
+                <div
+                  style="height: 100%"
+                  class="social2 bg-white p-3 rounded me-md-2 mx-2"
+                >
+                  <h3 class="fw-bold mt-0 mb-1">Social Info</h3>
+                  <p class="text-black-50 mt-0 mb-3">
+                    Social Media Information
+                  </p>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <i
+                      class="fa-brands fa-twitter d-flex align-items-center justify-content-between text-black-50"
+                    ></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      placeholder="Twitter Username"
+                    />
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <i
+                      class="fa-brands fa-facebook d-flex align-items-center justify-content-between text-black-50"
+                    ></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      placeholder="Facebook Username"
+                    />
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <i
+                      class="fa-brands fa-instagram d-flex align-items-center justify-content-between text-black-50"
+                    ></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      placeholder="Instagram Username"
+                    />
+                  </div>
+
+                  <div class="d-flex align-items-center mb-4">
+                    <i
+                      class="fa-brands fa-youtube d-flex align-items-center justify-content-between text-black-50"
+                    ></i>
+                    <input
+                      class="w-100"
+                      type="text"
+                      placeholder="Youtube Username"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-md-12 rounded p-0 mb-3">
+                <div
+                  style="height: 100%"
+                  class="widgets bg-white p-3 rounded me-md-2 mx-2"
+                >
+                  <h3 class="fw-bold mt-0 mb-1">Widgets Control</h3>
+                  <p class="text-black-50 mt-0 mb-3">Show/Hide Widgets</p>
+
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="Draft"
+                      checked
+                    />
+                    <label class="form-check-label" for="Draft">
+                      Quick Draft
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="targets"
+                      checked
+                    />
+                    <label class="form-check-label" for="targets">
+                      Yearly Targets
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="tickets"
+                      checked
+                    />
+                    <label class="form-check-label" for="tickets">
+                      Tickets Statistics
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="news"
+                    />
+                    <label class="form-check-label" for="news">
+                      Latest News
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="tasks"
+                      checked
+                    />
+                    <label class="form-check-label" for="tasks">
+                      Latest Tasks
+                    </label>
+                  </div>
+                  <div class="form-check mb-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="search"
+                    />
+                    <label class="form-check-label" for="search">
+                      Top Search Items
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-6 col-md-12 rounded p-0 mb-3">
+                <div
+                  style="height: 100%"
+                  class="manager bg-white p-3 rounded me-md-2 mx-2"
+                >
+                  <h3 class="fw-bold mt-0 mb-1">Backup Manager</h3>
+                  <p class="text-black-50 mt-0 mb-3">
+                    Control Backup Time And Location
+                  </p>
+                  <div class="form-check mb-3 fs-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="daily"
+                    />
+                    <label class="form-check-label" for="daily"> Daily </label>
+                  </div>
+                  <div class="form-check mb-3 fs-5">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="week"
+                      checked
+                    />
+                    <label class="form-check-label" for="week"> Weekly </label>
+                  </div>
+                  <div class="form-check pb-3 fs-5 border-bottom">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="month"
+                    />
+                    <label class="form-check-label" for="month">
+                      Monthly
+                    </label>
+                  </div>
+
+                  <div class="servers d-flex align-items-center">
+                    <input class="pe-2" type="radio" id="ser1" />
+                    <div class="server mb-3 rounded w-100">
+                      <label class="form-check-label d-block m-2" for="ser1">
+                        <i class="fa-solid fa-server d-block mb-10"></i>
+                        Megaman
+                      </label>
+                    </div>
+                    <input class="pe-2" type="radio" id="ser2" checked />
+                    <div class="server mb-3 rounded w-100">
+                      <label class="form-check-label d-block m-2" for="ser2">
+                        <i class="fa-solid fa-server d-block mb-10"></i>
+                        Elyeage
+                      </label>
+                    </div>
+                    <input class="pe-2" type="radio" id="ser3" />
+                    <div class="server mb-3 rounded w-100">
+                      <label class="form-check-label d-block m-2" for="ser3">
+                        <i class="fa-solid fa-server d-block mb-10"></i>
+                        Megaman
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/main.js"></script>
+    <script></script>
+  </body>
+</html>
